@@ -9,6 +9,8 @@ namespace Helloworld
 	{
 		public App ()
 		{
+            LiveReload.Init();
+
 			InitializeComponent();
 
 			MainPage = new MainPage();
