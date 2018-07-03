@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Helloworld.FlexLayoutView" >
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <ScrollView Orientation = "Vertical" >
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="COLUM" x:Name="btnColumn" Clicked="btnColumn_Clicked"></Button>
+                    <Button Text="ROW" x:Name="btnRow" Clicked="btnRow_Clicked"></Button>
+                    <Button Text="WRAP" x:Name="btnWrap" Clicked="btnWrap_Clicked"></Button>
+                </StackLayout>
+            </ScrollView>
+            <ScrollView Orientation = "Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="ALIGN START" x:Name="btnAlignStart" Clicked="btnAlignStart_Clicked"></Button>
+                    <Button Text="ALIGN CENTER" x:Name="btnAlignCenter" Clicked="btnAlignCenter_Clicked"></Button>
+                    <Button Text="ALIGN END" x:Name="btnAlignEnd" Clicked="btnAlignEnd_Clicked"></Button>
+                </StackLayout>
+            </ScrollView>
+            <ScrollView Orientation = "Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="JUSTIFI CENTER" x:Name="btnJustifyCenter" Clicked="btnJustifyCenter_Clicked"></Button>
+                    <Button Text="SPACE AROUND" x:Name="btnSpaceArround" Clicked="btnSpaceArround_Clicked"></Button>
+                    <Button Text="SPACE EVEN" x:Name="btnSpaceEven" Clicked="btnSpaceEven_Clicked"></Button>
+                </StackLayout>
+            </ScrollView>
+            <FlexLayout Wrap="Wrap"  x:Name="BtnsContainer" >
+                <Label Text="1" BackgroundColor="Green" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="2" BackgroundColor="Yellow" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="3" BackgroundColor="Blue" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="4" BackgroundColor="Black" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="5" BackgroundColor="Brown" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="6" BackgroundColor="Red" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="7" BackgroundColor="Pink" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="8" BackgroundColor="Orange" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="9" BackgroundColor="Green" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+                <Label Text="10" BackgroundColor="Pink" HeightRequest="50" WidthRequest="50" HorizontalTextAlignment="Center"></Label>
+
+            </FlexLayout>
+            
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

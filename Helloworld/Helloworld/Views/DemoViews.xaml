@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Helloworld.Views.DemoViews"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="3">
+                <BoxView BackgroundColor="Green" HeightRequest="100"></BoxView>
+                <BoxView BackgroundColor="Yellow" HeightRequest="100"></BoxView>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                    <BoxView BackgroundColor="White" WidthRequest="30" HeightRequest="30"></BoxView>
+                    <BoxView BackgroundColor="White" WidthRequest="30" HeightRequest="30"></BoxView>
+                    <BoxView BackgroundColor="White" WidthRequest="30" HeightRequest="30"></BoxView>
+                    <BoxView BackgroundColor="White" WidthRequest="30" HeightRequest="30"></BoxView>
+                </StackLayout>
+                <BoxView BackgroundColor="Blue" HeightRequest="100"></BoxView>
+                <BoxView BackgroundColor="Red" HeightRequest="50"></BoxView>
+                <BoxView BackgroundColor="Pink" VerticalOptions="FillAndExpand"></BoxView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

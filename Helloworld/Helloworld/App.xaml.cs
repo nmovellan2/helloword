@@ -13,7 +13,7 @@ namespace Helloworld
 
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new Views.ActiviyIndicatorView();
 		}
 
 		protected override void OnStart ()

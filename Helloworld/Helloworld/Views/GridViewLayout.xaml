@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Helloworld.Views.GridViewLayout" BackgroundColor="Black">
+    <ContentPage.Content>
+        <Grid>
+            <!--Definicion de filas y columans-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- elementos-->
+            <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Yellow" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"></BoxView>
+            <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Green" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"></BoxView>
+            <BoxView Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="Blue"></BoxView>
+            <BoxView Grid.Row="2" Grid.Column="0" BackgroundColor="Pink" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"></BoxView>
+            <BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="Red" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center"></BoxView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
